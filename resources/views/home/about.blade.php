@@ -7,7 +7,7 @@
             <div class="col-lg-4 ms-auto">
                 <p class="lead">{{ $viewData["description"] }}</p>
             </div>
-            <div class="col-lg-4 me-auto">">
+            <div class="col-lg-4 me-auto">
                 <p class="lead">{{ $viewData["author"] }}</p>
             </div>
         </div>
