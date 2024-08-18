@@ -72,7 +72,7 @@ class Product extends Model
     
     public function setCreatedAt($createdAt)
     {
-        return $this->attributes['createdAt'] = $createdAt;
+        return $this->attributes['created_at'] = $createdAt;
     }
 
     public function getUpdatedAt()
