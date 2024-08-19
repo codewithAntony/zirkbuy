@@ -21,6 +21,17 @@
                     <a class="nav-link active" href="{{ route("home.index")}}">Home</a>
                     <a class="nav-link active" href="{{ route("product.index")}}">Products</a>
                     <a class="nav-link active" href="{{ route("home.about")}}">About</a>
+                    <div class="vr bg-white mx-2 d-none d-lg-block">
+                        @guest
+                            <a class="nav-link active" href="{{ route('login') }}">Login</a>
+                            <a class="nav-link active" href="{{ route('register') }}">Register</a>
+                            @else
+                            <form id="logout" action="{{ route('logout') }}" method="POST">
+                                <a role="button" class="nav-link active" onclick="document.getElementById('logout').submit();" href="">Logout</a>
+                                @csrf
+                            </form>
+                        @endguest
+                    </div>
                 </div>
             </div>
         </div>
@@ -42,8 +53,8 @@
                 class="text-reset fw-bold text-decoration-none"
                 target="_blank"
                 href="/">
-                Antony Namu
-            </a> - <b>Tom Namu</b>
+                Aleton Services
+            </a>
             </small>
         </div>
     </div>
